@@ -34,20 +34,26 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         int price = calculatePrice();
-        String priceMessage = "Total= $" + price;
-        priceMessage = priceMessage + "\nThank you!";
-        displayMessage(priceMessage);
+        displayMessage(createOrderSummary(price));
 
     }
 
     /**
      * This method is called for calculate price order.
+     * @return Total price
      */
     private int calculatePrice() {
         int price = quantity * 5;
         return price;
     }
 
+    /**
+     * This method is called when submit order.
+     */
+private String createOrderSummary(int price){
+    String summary = "Name: Angel Serra\nQuantity: "+ quantity+"\nTotal: $" + price+"\nThank you!";
+    return summary;
+}
     /**
      * This method is called when the + button is clicked.
      */
