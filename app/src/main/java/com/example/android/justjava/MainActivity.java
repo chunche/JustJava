@@ -54,12 +54,11 @@ public class MainActivity extends AppCompatActivity {
      */
     private String createOrderSummary(int price) {
         CheckBox whippedCreamCheckbox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
-        String summary = "";
-        if (whippedCreamCheckbox.isChecked()) {
-            summary += "Order with whippedCream\n" + "Name: Angel Serra\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
-        } else {
-            summary += "Name: Angel Serra\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
-        }
+        CheckBox ChocolateCheckbox = (CheckBox) findViewById(R.id.chocolate_checkbox);
+        Boolean hasWhippedCream = whippedCreamCheckbox.isChecked();
+        Boolean hasChocolate = ChocolateCheckbox.isChecked();
+        String summary = "Name: Angel Serra\nAdd whipped cream?: " + hasWhippedCream + "\nAdd chocolate?: " + hasChocolate +
+                "\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
         return summary;
     }
 
