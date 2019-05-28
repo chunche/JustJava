@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" translatable="false">Just Java</string>
     <string name="toppings">Toppings</string>
     <string name="whipped_cream">Whipped cream</string>
@@ -7,4 +7,11 @@
     <string name="order_summary">Order Summary</string>
     <string name="order">Order</string>
     <string name="name">Name</string>
+    <string name="order_summary_name">Name: <xliff:g id="name" example="pepe">%s</xliff:g></string>
+    <string name="order_summary_whipped">Add Whipped cream?: <xliff:g id="whipped" example="true">%b</xliff:g></string>
+    <string name="order_summary_chocolate">Add Chocolate?: <xliff:g id="chocolate" example="true">%b</xliff:g></string>
+    <string name="order_summary_quantity">Quantity: <xliff:g id="quantity" example="2">%d</xliff:g></string>
+    <string name="order_summary_total">Total: <xliff:g id="total" example="52">%d</xliff:g></string>
+    <string name="thank_you">Thank you!</string>
+    <string name="email_subject">Coffee order of : <xliff:g id="correo" example="pepe">%s</xliff:g></string>
 </resources>

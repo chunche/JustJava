@@ -68,11 +68,15 @@ public class MainActivity extends AppCompatActivity {
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
         int price = calculatePrice(hasChocolate, hasWhippedCream);
-        String summary = "Name: " + name + "\nAdd whipped cream?: " + hasWhippedCream + "\nAdd chocolate?: " + hasChocolate +
-                "\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
+        String summary = getString(R.string.order_summary_name, name) +
+                "\n" + getString(R.string.order_summary_whipped, hasWhippedCream) +
+                "\n" + getString(R.string.order_summary_chocolate, hasChocolate) +
+                "\n" + getString(R.string.order_summary_quantity, quantity) +
+                "\n" + getString(R.string.order_summary_total, price) +
+                "\n" + getString(R.string.thank_you);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Coffe order of " + name);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject, name));
         intent.putExtra(Intent.EXTRA_TEXT, summary);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
