@@ -11,7 +11,7 @@
     <string name="order_summary_whipped">Agregar crema batida?: <xliff:g example="true" id="name">%b</xliff:g></string>
     <string name="order_summary_chocolate">Agregar chocolate?: <xliff:g example="true" id="name">%b</xliff:g></string>
     <string name="order_summary_quantity">Cantidad: <xliff:g example="true" id="quantity">%d</xliff:g></string>
-    <string name="order_summary_total">Total: <xliff:g example="52" id="total">%d</xliff:g></string>
+    <string name="order_summary_total">Total: <xliff:g example="52" id="total">%s</xliff:g></string>
     <string name="thank_you">Gracias!</string>
-    <string name="email_subject">Orden de cafe para : <xliff:g id="correo" example="pepe">%s</xliff:g></string>
+    <string name="email_subject">Orden de café para : <xliff:g id="correo" example="pepe">%s</xliff:g></string>
 </resources>

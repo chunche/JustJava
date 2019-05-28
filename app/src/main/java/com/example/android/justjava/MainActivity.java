@@ -19,6 +19,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.NumberFormat;
+
 
 /**
  * This app displays an order form to order coffee.
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 "\n" + getString(R.string.order_summary_whipped, hasWhippedCream) +
                 "\n" + getString(R.string.order_summary_chocolate, hasChocolate) +
                 "\n" + getString(R.string.order_summary_quantity, quantity) +
-                "\n" + getString(R.string.order_summary_total, price) +
+                "\n" + getString(R.string.order_summary_total, NumberFormat.getCurrencyInstance().format(price)) + //local currency
                 "\n" + getString(R.string.thank_you);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
