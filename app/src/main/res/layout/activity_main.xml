@@ -13,7 +13,7 @@
             android:id="@+id/name_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="textCapWords" />
 
         <TextView
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:paddingBottom="16dp"
-            android:text="Toppings"
+            android:text="@string/toppings"
             android:textAllCaps="true"
             android:textColor="@android:color/darker_gray" />
 
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
-            android:text="Whipped cream"
+            android:text="@string/whipped_cream"
             android:textSize="16dp" />
 
         <CheckBox
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
-            android:text="Chocolate"
+            android:text="@string/chocolate"
             android:textSize="16dp" />
 
         <TextView
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Quantity"
+            android:text="@string/quantity"
             android:textAllCaps="true"
             android:textColor="@android:color/darker_gray" />
 
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:text="Order Summary"
+            android:text="@string/order_summary"
             android:textAllCaps="true"
             android:textColor="@android:color/darker_gray" />
 
@@ -100,7 +100,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:onClick="submitOrder"
-            android:text="Order" />
+            android:text="@string/order" />
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
